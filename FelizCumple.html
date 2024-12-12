@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños </title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffe6f2, #ff99cc);
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            color: #ff4da6;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+
+        .text {
+            font-family: 'Lora', serif;
+            flex: 1;
+            font-size: 1.2rem;
+            text-align: justify;
+            line-height: 1.8;
+            color: #313131;
+            margin: 10px;
+            padding: 15px;            
+            border-radius: 10px;
+            box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-frame {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .image-frame img,
+        .image-frame video {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .image-frame img:hover,
+        .image-frame video:hover {
+            transform: scale(1.05);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn-link {
+            font-family: 'Lora', serif;
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ff4da6;
+            color: #fff;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-link:hover {
+            background-color: #e6399b;
+            transform: scale(1.05);
+        }
+
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .heart {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: #ff4da6;
+            transform: rotate(-45deg);
+            animation: float 6s infinite ease-in-out;
+            opacity: 0.7;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: #ff4da6;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -15px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 15px;
+            top: 0;
+        }
+
+        .heart:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+        .heart:nth-child(2) { top: 15%; left: 60%; animation-delay: 1s; }
+        .heart:nth-child(3) { top: 40%; left: 30%; animation-delay: 2s; }
+        .heart:nth-child(4) { top: 70%; left: 50%; animation-delay: 3s; }
+        .heart:nth-child(5) { top: 20%; left: 80%; animation-delay: 4s; }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(-45deg); opacity: 1; }
+            50% { transform: translateY(-50px) rotate(-45deg); opacity: 0.5; }
+            100% { transform: translateY(-150px) rotate(-45deg); opacity: 0; }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Feliz Cumpleaños Mi Niña!</h1>
+
+        <div class="section">
+            <div class="text">
+                Bueno mi vida, hoy no es un día cualquiera porque justo hoy cumples un año más de vida, 
+                un año más estando con las personas que te quieren, que te aman y sobre todo quieren verte feliz y siendo tú misma.
+                Sé que no podré estar junto a ti y que también me duele por dentro no poder cumplir tu deseo que tanto querías, 
+                por cosas que salen de nuestras manos o por problemas, pero tú sabes que siempre estaré esperándote para cumplir 
+                todos los sueños que tú tengas.
+            </div>
+            <div class="image-frame">
+                <img src="img/foto1.jpg" alt="Foto 1">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="image-frame">
+                <video src="img/video1.mp4" controls></video>
+            </div>
+            <div class="text">
+                Sabes cuánto te amo y que siempre serás MI NIÑA, la cual me enamoré desde que tuve la misma edad que tienes ahora "17". 
+                Desde que te conocí fuiste una chica muy linda conmigo, 
+                recuerdo los momentos que pasamos juntos conversando la primera fiesta que fuimos la pasamos juntos, 
+                fue de las cosas mas bonitas que me ha pasado, eres muy buena tanto con tu amigos como con tus padres aunque ellos no lo vean o lo sepan reconocer, 
+                yo siempre estare orgulloso de las cosas que haces con todos. 
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text">
+                Eres buena, aplicada con tus estudios, dedicada a ti misma, te sabes vestir bien linda, sabes escuchar, cuando te ries te haces chinita chinita y te vez bien bonita. 
+                Te quiero ver triunfar Noelia, te lo digo como amigo y enamorado. Siempre te deseare lo mejor porque lo mereces.. Te amo
+            </div>
+            <div class="image-frame">
+                <img src="img/foto2.jpg" alt="Foto 2">
+            </div>
+            
+        </div>
+
+        <div class="section">
+        
+            <div class="image-frame">
+                <video src="img/Video2.mp4" controls></video>
+            </div>
+            
+        </div>
+
+        <div class="button-container">
+            <a href="https://www.canva.com/design/DAGZD2rlsUU/QC2gbA_d9IgdRsEx9EwA9g/edit?utm_content=DAGZD2rlsUU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+            class="btn-link" target="_blank">sigue por aqui..</a>
+        </div>
+    </div>
+
+    <div class="hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+</body>
+</html>
